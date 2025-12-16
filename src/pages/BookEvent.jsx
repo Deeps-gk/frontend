@@ -31,11 +31,11 @@ function BookEvent() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white pt-20 pb-16">
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-emerald-950 text-white pt-20 pb-16">
       <div className="max-w-2xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-4">
+        <div className="text-center mb-12 animate-fade-in-up">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold text-yellow-400 mb-4">
             Book Your Event
           </h1>
           <p className="text-gray-300 text-lg">
@@ -44,11 +44,11 @@ function BookEvent() {
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="bg-gray-900 p-8 rounded-lg border border-yellow-400">
+        <form onSubmit={handleSubmit} className="bg-gradient-to-br from-gray-800/90 to-emerald-900/30 backdrop-blur-sm p-8 rounded-2xl border-2 border-emerald-700/50 hover:border-emerald-600 transition-all duration-300 animate-fade-in-up animation-delay-300">
           <div className="space-y-6">
             {/* Full Name */}
             <div>
-              <label className="block text-yellow-400 font-semibold mb-2">
+              <label className="block text-emerald-400 font-semibold mb-2">
                 Full Name *
               </label>
               <input
@@ -57,14 +57,14 @@ function BookEvent() {
                 value={formData.fullName}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-black border border-gray-600 rounded-lg text-white focus:border-yellow-400 focus:outline-none"
+                className="w-full px-4 py-3 bg-black/50 border border-emerald-700/50 rounded-lg text-white focus:border-emerald-400 focus:outline-none transition-colors duration-200"
                 placeholder="Enter your full name"
               />
             </div>
 
             {/* Phone Number */}
             <div>
-              <label className="block text-yellow-400 font-semibold mb-2">
+              <label className="block text-emerald-400 font-semibold mb-2">
                 Phone Number *
               </label>
               <input
@@ -73,14 +73,14 @@ function BookEvent() {
                 value={formData.phoneNumber}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-black border border-gray-600 rounded-lg text-white focus:border-yellow-400 focus:outline-none"
+                className="w-full px-4 py-3 bg-black/50 border border-emerald-700/50 rounded-lg text-white focus:border-emerald-400 focus:outline-none transition-colors duration-200"
                 placeholder="Enter your phone number"
               />
             </div>
 
             {/* Event Type */}
             <div>
-              <label className="block text-yellow-400 font-semibold mb-2">
+              <label className="block text-emerald-400 font-semibold mb-2">
                 Event Type *
               </label>
               <select
@@ -88,20 +88,20 @@ function BookEvent() {
                 value={formData.eventType}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-black border border-gray-600 rounded-lg text-white focus:border-yellow-400 focus:outline-none"
+                className="w-full px-4 py-3 bg-black/50 border border-emerald-700/50 rounded-lg text-white focus:border-emerald-400 focus:outline-none transition-colors duration-200"
               >
                 <option value="">Select event type</option>
-                <option value="Wedding">Wedding</option>
-                <option value="Birthday">Birthday</option>
-                <option value="Corporate">Corporate</option>
-                <option value="Housewarming">Housewarming</option>
-                <option value="Other">Other</option>
+                <option value="Housewarming">Housewarming Ceremony</option>
+                <option value="Birthday">Small Birthday Gathering</option>
+                <option value="Religious">Religious Function</option>
+                <option value="Festival">Family Festival</option>
+                <option value="Other">Other Small Function</option>
               </select>
             </div>
 
             {/* Event Date */}
             <div>
-              <label className="block text-yellow-400 font-semibold mb-2">
+              <label className="block text-emerald-400 font-semibold mb-2">
                 Event Date *
               </label>
               <input
@@ -110,13 +110,13 @@ function BookEvent() {
                 value={formData.eventDate}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-black border border-gray-600 rounded-lg text-white focus:border-yellow-400 focus:outline-none"
+                className="w-full px-4 py-3 bg-black/50 border border-emerald-700/50 rounded-lg text-white focus:border-emerald-400 focus:outline-none transition-colors duration-200"
               />
             </div>
 
             {/* Number of Guests */}
             <div>
-              <label className="block text-yellow-400 font-semibold mb-2">
+              <label className="block text-emerald-400 font-semibold mb-2">
                 Number of Guests *
               </label>
               <input
@@ -126,14 +126,15 @@ function BookEvent() {
                 onChange={handleChange}
                 required
                 min="1"
-                className="w-full px-4 py-3 bg-black border border-gray-600 rounded-lg text-white focus:border-yellow-400 focus:outline-none"
-                placeholder="Expected number of guests"
+                max="50"
+                className="w-full px-4 py-3 bg-black/50 border border-emerald-700/50 rounded-lg text-white focus:border-emerald-400 focus:outline-none transition-colors duration-200"
+                placeholder="Expected number of guests (max 50)"
               />
             </div>
 
             {/* Message */}
             <div>
-              <label className="block text-yellow-400 font-semibold mb-2">
+              <label className="block text-emerald-400 font-semibold mb-2">
                 Message / Special Requirements
               </label>
               <textarea
@@ -141,7 +142,7 @@ function BookEvent() {
                 value={formData.message}
                 onChange={handleChange}
                 rows="4"
-                className="w-full px-4 py-3 bg-black border border-gray-600 rounded-lg text-white focus:border-yellow-400 focus:outline-none resize-none"
+                className="w-full px-4 py-3 bg-black/50 border border-emerald-700/50 rounded-lg text-white focus:border-emerald-400 focus:outline-none resize-none transition-colors duration-200"
                 placeholder="Any special requirements or additional information..."
               />
             </div>
@@ -149,10 +150,15 @@ function BookEvent() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-yellow-400 text-black py-3 px-6 rounded-lg font-semibold text-lg hover:bg-yellow-500 transition-colors duration-200"
+              className="w-full bg-emerald-700 hover:bg-emerald-600 text-white py-3 px-6 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-emerald-700/30 border border-yellow-400/20"
             >
               Submit Enquiry
             </button>
+            
+            {/* Note */}
+            <p className="text-center text-gray-400 text-sm mt-4">
+              We specialize in small, intimate functions with personalized service
+            </p>
           </div>
         </form>
       </div>

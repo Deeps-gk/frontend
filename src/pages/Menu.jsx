@@ -1,112 +1,78 @@
-import MenuSection from "../components/MenuSection";
-
 function Menu() {
-  const menuData = {
-    "Rice Items": [
-      { name: "Chicken Biryani", description: "Aromatic basmati rice with tender chicken pieces", price: "250" },
-      { name: "Mutton Biryani", description: "Traditional biryani with succulent mutton", price: "300" },
-      { name: "Egg Biryani", description: "Flavorful rice with boiled eggs", price: "180" },
-      { name: "Veg Biryani", description: "Mixed vegetable biryani with aromatic spices", price: "150" }
-    ],
-    "Soups": [
-      { name: "Chicken Clear Soup", description: "Light and flavorful chicken broth", price: "80" },
-      { name: "Mutton Soup", description: "Rich and hearty mutton soup", price: "100" },
-      { name: "Tomato Soup", description: "Classic tomato soup with herbs", price: "60" },
-      { name: "Sweet Corn Soup", description: "Creamy sweet corn soup", price: "70" }
-    ],
-    "Sea Food": [
-      { name: "Fish Fry", description: "Crispy fried fish with Malnad spices", price: "200" },
-      { name: "Prawn Curry", description: "Traditional coastal prawn curry", price: "280" },
-      { name: "Fish Curry", description: "Authentic fish curry with coconut", price: "220" },
-      { name: "Crab Masala", description: "Spicy crab preparation", price: "350" }
-    ],
-    "Chicken Starters": [
-      { name: "Chicken 65", description: "Spicy deep-fried chicken starter", price: "180" },
-      { name: "Chicken Manchurian", description: "Indo-Chinese style chicken", price: "200" },
-      { name: "Chicken Tikka", description: "Grilled chicken with aromatic spices", price: "220" },
-      { name: "Chicken Lollipop", description: "Drumstick chicken appetizer", price: "240" }
-    ],
-    "Chicken Gravy": [
-      { name: "Butter Chicken", description: "Creamy tomato-based chicken curry", price: "250" },
-      { name: "Chicken Curry", description: "Traditional Malnad style chicken curry", price: "200" },
-      { name: "Chicken Masala", description: "Spicy chicken in rich gravy", price: "220" },
-      { name: "Kadai Chicken", description: "Chicken cooked in kadai with peppers", price: "240" }
-    ],
-    "Mutton Starters": [
-      { name: "Mutton Fry", description: "Dry roasted mutton with spices", price: "280" },
-      { name: "Mutton Pepper Fry", description: "Spicy pepper mutton starter", price: "300" },
-      { name: "Mutton Sukka", description: "Dry mutton preparation", price: "320" },
-      { name: "Mutton Chops", description: "Grilled mutton chops", price: "350" }
-    ],
-    "Mutton Gravy": [
-      { name: "Mutton Curry", description: "Traditional mutton curry", price: "300" },
-      { name: "Mutton Masala", description: "Rich and spicy mutton gravy", price: "320" },
-      { name: "Mutton Korma", description: "Mild mutton curry with yogurt", price: "340" },
-      { name: "Mutton Rogan Josh", description: "Kashmiri style mutton curry", price: "360" }
-    ],
-    "Egg Starters": [
-      { name: "Egg 65", description: "Spicy fried egg starter", price: "120" },
-      { name: "Egg Manchurian", description: "Indo-Chinese style egg", price: "140" },
-      { name: "Egg Pepper Fry", description: "Scrambled eggs with pepper", price: "100" },
-      { name: "Boiled Egg Fry", description: "Fried boiled eggs with spices", price: "80" }
-    ],
-    "Egg Gravy": [
-      { name: "Egg Curry", description: "Traditional egg curry", price: "120" },
-      { name: "Egg Masala", description: "Spicy egg gravy", price: "140" },
-      { name: "Egg Korma", description: "Mild egg curry with coconut", price: "160" },
-      { name: "Egg Bhurji", description: "Scrambled eggs with onions", price: "100" }
-    ],
-    "Veg Starters": [
-      { name: "Gobi 65", description: "Spicy cauliflower starter", price: "120" },
-      { name: "Paneer Tikka", description: "Grilled cottage cheese", price: "180" },
-      { name: "Veg Manchurian", description: "Mixed vegetable balls in sauce", price: "140" },
-      { name: "Mushroom Fry", description: "Spicy mushroom starter", price: "160" }
-    ],
-    "Veg Rice": [
-      { name: "Veg Fried Rice", description: "Stir-fried rice with vegetables", price: "120" },
-      { name: "Jeera Rice", description: "Cumin flavored basmati rice", price: "100" },
-      { name: "Lemon Rice", description: "Tangy lemon flavored rice", price: "80" },
-      { name: "Curd Rice", description: "Traditional South Indian rice", price: "70" }
-    ],
-    "Veg Gravy": [
-      { name: "Dal Tadka", description: "Tempered yellow lentils", price: "80" },
-      { name: "Paneer Butter Masala", description: "Cottage cheese in creamy gravy", price: "180" },
-      { name: "Mixed Veg Curry", description: "Seasonal vegetables in curry", price: "120" },
-      { name: "Aloo Gobi", description: "Potato and cauliflower curry", price: "100" }
-    ]
-  };
+  const specialItems = [
+    {
+      name: "Kadubu",
+      description: "Traditional steamed rice dumplings, a signature Malnad specialty prepared with authentic techniques"
+    },
+    {
+      name: "Special Prawn Curry",
+      description: "Coastal-style prawn preparation with fresh coconut and traditional Malnad spices"
+    },
+    {
+      name: "Prawn Ghee Roast",
+      description: "Succulent prawns roasted in ghee with aromatic spice blend, a house specialty"
+    },
+    {
+      name: "Traditional Ragi Mudde",
+      description: "Authentic finger millet balls served with homestyle sambar and traditional accompaniments"
+    },
+    {
+      name: "Malnad Fish Curry",
+      description: "Fresh fish cooked in coconut-based curry with traditional Malnad spices and curry leaves"
+    },
+    {
+      name: "Homestyle Rasam",
+      description: "Traditional tangy soup prepared with tamarind, tomatoes, and aromatic spices"
+    },
+    {
+      name: "Authentic Sambar",
+      description: "Traditional lentil-based curry with vegetables, prepared using age-old family recipes"
+    },
+    {
+      name: "Traditional Sweets",
+      description: "Homemade Mysore Pak, Holige, and other authentic Malnad desserts prepared fresh"
+    }
+  ];
 
   return (
-    <div className="min-h-screen bg-black text-white pt-20 pb-16">
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-emerald-950 text-white pt-20 pb-16">
       <div className="max-w-4xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-4">
-            Our Menu
+        <div className="text-center mb-12 animate-fade-in-up">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-yellow-400">
+            Our Special Items
           </h1>
-          <p className="text-gray-300 text-lg">
-            Authentic Malnad flavors crafted with traditional recipes
+          <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
+            Authentic Malnad specialties crafted with traditional recipes and fresh ingredients. 
+            We focus on quality over quantity, preparing each dish with care and authenticity.
           </p>
         </div>
 
-        {/* Menu Sections */}
-        <div className="space-y-8">
-          {Object.entries(menuData).map(([sectionTitle, items]) => (
-            <MenuSection 
-              key={sectionTitle} 
-              title={sectionTitle} 
-              items={items} 
-            />
+        {/* Special Items */}
+        <div className="space-y-6 mb-12">
+          {specialItems.map((item, index) => (
+            <div 
+              key={index} 
+              className="bg-gradient-to-r from-gray-800/90 to-emerald-900/30 backdrop-blur-sm p-6 rounded-2xl border-2 border-emerald-700/50 hover:border-emerald-600 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-lg hover:shadow-emerald-900/20 animate-fade-in-up"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <h3 className="font-serif text-xl font-semibold text-yellow-400 mb-3">{item.name}</h3>
+              <p className="text-gray-300 leading-relaxed">{item.description}</p>
+            </div>
           ))}
         </div>
 
         {/* Footer Note */}
-        <div className="text-center mt-12 p-6 bg-gray-900 rounded-lg border border-yellow-400">
-          <p className="text-gray-300 mb-2">
-            All prices are inclusive of taxes. Menu items may vary based on availability.
+        <div className="text-center mt-12 p-8 bg-gradient-to-r from-gray-800/90 to-emerald-900/30 backdrop-blur-sm rounded-2xl border-2 border-emerald-700/50 hover:border-emerald-600 transition-all duration-300 animate-fade-in-up">
+          <h3 className="font-serif text-xl font-semibold text-emerald-400 mb-4">
+            Traditional Preparation, Authentic Taste
+          </h3>
+          <p className="text-gray-300 mb-4 leading-relaxed">
+            We specialize in authentic, traditional dishes prepared using time-honored methods. 
+            Each item is crafted with fresh ingredients and genuine Malnad flavors.
           </p>
           <p className="text-yellow-400 font-semibold">
-            For bulk orders and catering, please contact us for special pricing.
+            Complete menu available on request during visits or consultations for your special functions.
           </p>
         </div>
       </div>

@@ -2,127 +2,120 @@ import { Link } from "react-router-dom";
 
 function Events() {
   return (
-    <div className="min-h-screen bg-black text-white pt-20 pb-16">
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-emerald-950 text-white pt-20 pb-16">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
+        <div className="text-center mb-12 animate-fade-in-up">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-yellow-400">
             Events & Functions
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
-            Celebrate life's special moments with authentic Malnad cuisine. 
-            We bring traditional flavors and warm hospitality to make your events memorable.
+            Celebrate intimate moments with authentic Malnad cuisine. 
+            We specialize in small family functions with traditional flavors and warm hospitality.
           </p>
         </div>
 
         {/* Event Types */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-semibold text-yellow-400 text-center mb-8">
-            Events We Cater For
+        <div className="mb-12 animate-fade-in-up animation-delay-300">
+          <h2 className="font-serif text-3xl font-semibold text-center mb-8 text-emerald-400">
+            Small Functions We Specialize In
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-gray-900 p-6 rounded-lg border border-yellow-400 text-center">
-              <h3 className="text-xl font-semibold text-yellow-400 mb-3">Weddings</h3>
-              <p className="text-gray-300">Traditional wedding feasts with authentic Malnad specialties</p>
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-gray-800/90 to-emerald-900/30 backdrop-blur-sm p-6 rounded-2xl border-2 border-emerald-700/50 hover:border-emerald-600 text-center transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-900/20">
+              <h3 className="font-serif text-xl font-semibold text-yellow-400 mb-3">Housewarming Ceremonies</h3>
+              <p className="text-gray-300">Auspicious beginnings with blessed traditional meals for family and close friends</p>
             </div>
-            <div className="bg-gray-900 p-6 rounded-lg border border-yellow-400 text-center">
-              <h3 className="text-xl font-semibold text-yellow-400 mb-3">Corporate Events</h3>
-              <p className="text-gray-300">Professional catering for meetings, conferences, and celebrations</p>
+            <div className="bg-gradient-to-br from-gray-800/90 to-emerald-900/30 backdrop-blur-sm p-6 rounded-2xl border-2 border-emerald-700/50 hover:border-emerald-600 text-center transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-900/20">
+              <h3 className="font-serif text-xl font-semibold text-yellow-400 mb-3">Small Birthday Gatherings</h3>
+              <p className="text-gray-300">Intimate birthday celebrations with authentic Malnad family-style cuisine</p>
             </div>
-            <div className="bg-gray-900 p-6 rounded-lg border border-yellow-400 text-center">
-              <h3 className="text-xl font-semibold text-yellow-400 mb-3">Religious Functions</h3>
-              <p className="text-gray-300">Sacred ceremonies with traditional vegetarian offerings</p>
+            <div className="bg-gradient-to-br from-gray-800/90 to-emerald-900/30 backdrop-blur-sm p-6 rounded-2xl border-2 border-emerald-700/50 hover:border-emerald-600 text-center transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-900/20">
+              <h3 className="font-serif text-xl font-semibold text-yellow-400 mb-3">Religious Functions</h3>
+              <p className="text-gray-300">Sacred small ceremonies with traditional vegetarian offerings</p>
             </div>
-            <div className="bg-gray-900 p-6 rounded-lg border border-yellow-400 text-center">
-              <h3 className="text-xl font-semibold text-yellow-400 mb-3">Birthday Parties</h3>
-              <p className="text-gray-300">Joyful celebrations with family-style Malnad cuisine</p>
-            </div>
-            <div className="bg-gray-900 p-6 rounded-lg border border-yellow-400 text-center">
-              <h3 className="text-xl font-semibold text-yellow-400 mb-3">Festivals</h3>
-              <p className="text-gray-300">Traditional festival meals and seasonal specialties</p>
-            </div>
-            <div className="bg-gray-900 p-6 rounded-lg border border-yellow-400 text-center">
-              <h3 className="text-xl font-semibold text-yellow-400 mb-3">House Warmings</h3>
-              <p className="text-gray-300">Auspicious beginnings with blessed traditional meals</p>
+            <div className="bg-gradient-to-br from-gray-800/90 to-emerald-900/30 backdrop-blur-sm p-6 rounded-2xl border-2 border-emerald-700/50 hover:border-emerald-600 text-center transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-900/20">
+              <h3 className="font-serif text-xl font-semibold text-yellow-400 mb-3">Family Festivals</h3>
+              <p className="text-gray-300">Traditional festival meals for small family gatherings</p>
             </div>
           </div>
         </div>
 
         {/* Services Offered */}
-        <div className="grid md:grid-cols-2 gap-12 mb-12">
-          <div className="bg-gray-900 p-8 rounded-lg border border-yellow-400">
-            <h2 className="text-2xl font-semibold text-yellow-400 mb-6">Our Services</h2>
+        <div className="grid md:grid-cols-2 gap-12 mb-12 animate-fade-in-up animation-delay-600">
+          <div className="bg-gradient-to-br from-gray-800/90 to-emerald-900/30 backdrop-blur-sm p-8 rounded-2xl border-2 border-emerald-700/50 hover:border-emerald-600 transition-all duration-300">
+            <h2 className="font-serif text-2xl font-semibold text-emerald-400 mb-6">Our Services</h2>
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-start">
-                <span className="text-yellow-400 mr-3">•</span>
-                Complete menu planning and customization
+                <span className="text-emerald-400 mr-3">•</span>
+                Personalized menu planning for small gatherings
               </li>
               <li className="flex items-start">
-                <span className="text-yellow-400 mr-3">•</span>
-                Professional setup and serving staff
+                <span className="text-emerald-400 mr-3">•</span>
+                Family-style serving with authentic preparation
               </li>
               <li className="flex items-start">
-                <span className="text-yellow-400 mr-3">•</span>
+                <span className="text-emerald-400 mr-3">•</span>
                 Traditional banana leaf serving (on request)
               </li>
               <li className="flex items-start">
-                <span className="text-yellow-400 mr-3">•</span>
-                Eco-friendly packaging and utensils
+                <span className="text-emerald-400 mr-3">•</span>
+                Fresh ingredients and traditional cooking methods
               </li>
               <li className="flex items-start">
-                <span className="text-yellow-400 mr-3">•</span>
-                Flexible timing and location services
+                <span className="text-emerald-400 mr-3">•</span>
+                Intimate, warm hospitality for your guests
               </li>
             </ul>
           </div>
 
-          <div className="bg-gray-900 p-8 rounded-lg border border-yellow-400">
-            <h2 className="text-2xl font-semibold text-yellow-400 mb-6">Malnad Specialties</h2>
+          <div className="bg-gradient-to-br from-gray-800/90 to-emerald-900/30 backdrop-blur-sm p-8 rounded-2xl border-2 border-emerald-700/50 hover:border-emerald-600 transition-all duration-300">
+            <h2 className="font-serif text-2xl font-semibold text-emerald-400 mb-6">Malnad Specialties</h2>
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-start">
-                <span className="text-yellow-400 mr-3">•</span>
-                Authentic Bisi Bele Bath and Akki Rotti
+                <span className="text-emerald-400 mr-3">•</span>
+                Signature Kadubu (steamed rice dumplings)
               </li>
               <li className="flex items-start">
-                <span className="text-yellow-400 mr-3">•</span>
-                Traditional Ragi Mudde with Sambar
+                <span className="text-emerald-400 mr-3">•</span>
+                Special prawn preparations with coastal spices
               </li>
               <li className="flex items-start">
-                <span className="text-yellow-400 mr-3">•</span>
-                Homestyle Rasam and Kosambari
+                <span className="text-emerald-400 mr-3">•</span>
+                Traditional Ragi Mudde with authentic Sambar
               </li>
               <li className="flex items-start">
-                <span className="text-yellow-400 mr-3">•</span>
+                <span className="text-emerald-400 mr-3">•</span>
                 Fresh coconut-based curries and chutneys
               </li>
               <li className="flex items-start">
-                <span className="text-yellow-400 mr-3">•</span>
-                Traditional sweets like Mysore Pak and Holige
+                <span className="text-emerald-400 mr-3">•</span>
+                Homemade traditional sweets and desserts
               </li>
             </ul>
           </div>
         </div>
 
         {/* Call to Action */}
-        <div className="text-center bg-gray-900 p-8 rounded-lg border border-yellow-400">
-          <h3 className="text-2xl font-semibold text-yellow-400 mb-4">
-            Let Us Make Your Event Special
+        <div className="text-center bg-gradient-to-br from-gray-800/90 to-emerald-900/30 backdrop-blur-sm p-8 rounded-2xl border-2 border-emerald-700/50 hover:border-emerald-600 transition-all duration-300 animate-fade-in-up animation-delay-900">
+          <h3 className="font-serif text-2xl font-semibold text-yellow-400 mb-4">
+            Let Us Make Your Small Function Special
           </h3>
           <p className="text-gray-300 mb-6">
-            Book your event catering today and experience the warmth of traditional Malnad hospitality.
+            Experience the warmth of traditional Malnad hospitality for your intimate gatherings. 
+            We focus on authentic preparation and personalized service for small family functions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/contact" 
-              className="bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-colors duration-200"
+              className="bg-emerald-700 hover:bg-emerald-600 text-white px-8 py-3 rounded-full font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-emerald-700/30 border border-yellow-400/20"
             >
-              Book Your Event
+              Contact Us
             </Link>
             <Link 
               to="/menu" 
-              className="border-2 border-yellow-400 text-yellow-400 px-8 py-3 rounded-full font-semibold hover:bg-yellow-400 hover:text-black transition-colors duration-200"
+              className="border-2 border-yellow-400 text-yellow-400 px-8 py-3 rounded-full font-semibold hover:bg-yellow-400 hover:text-black transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-yellow-400/25"
             >
-              View Menu Options
+              View Our Specialties
             </Link>
           </div>
         </div>

@@ -1,0 +1,24 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Malnad Family Restaurant Premium Logo -->
+  <!-- Custom "M" lettermark with integrated nature element -->
+  
+  <!-- Left vertical stroke -->
+  <rect x="12" y="15" width="8" height="70" fill="#D4AF37"/>
+  
+  <!-- Right vertical stroke -->
+  <rect x="80" y="15" width="8" height="70" fill="#D4AF37"/>
+  
+  <!-- Center diagonal strokes forming the V of M -->
+  <polygon points="20,15 35,15 50,50 65,15 80,15 70,15 50,35 30,15" fill="#D4AF37"/>
+  
+  <!-- Integrated leaf element -->
+  <ellipse cx="84" cy="25" rx="6" ry="3" fill="#16a34a" transform="rotate(15 84 25)"/>
+  
+  <!-- Leaf vein detail -->
+  <line x1="81" y1="26" x2="87" y2="24" stroke="#16a34a" stroke-width="0.8"/>
+  
+  <!-- Subtle grain element on left stroke -->
+  <circle cx="16" cy="75" r="1.5" fill="#16a34a"/>
+  <circle cx="16" cy="72" r="1" fill="#16a34a"/>
+  <circle cx="16" cy="69" r="0.8" fill="#16a34a"/>
+</svg>

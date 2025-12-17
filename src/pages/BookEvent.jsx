@@ -17,17 +17,40 @@ function BookEvent() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Thank you for your enquiry. We will contact you soon.");
-    setFormData({
-      fullName: "",
-      phoneNumber: "",
-      eventType: "",
-      eventDate: "",
-      numberOfGuests: "",
-      message: ""
-    });
+    
+    try {
+      console.log("Submitting form data:", formData);
+      
+      const response = await fetch("http://localhost:5000/api/book-event", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData)
+      });
+      
+      const result = await response.json();
+      console.log("Server response:", result);
+      
+      if (result.success) {
+        alert("Thank you for your enquiry. We will contact you soon.");
+        setFormData({
+          fullName: "",
+          phoneNumber: "",
+          eventType: "",
+          eventDate: "",
+          numberOfGuests: "",
+          message: ""
+        });
+      } else {
+        alert("Error submitting enquiry. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Error submitting enquiry. Please try again.");
+    }
   };
 
   return (
@@ -35,7 +58,12 @@ function BookEvent() {
       <div className="max-w-2xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in-up">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-yellow-400 mb-4">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4" style={{
+            background: 'linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #F4E4BC 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text'
+          }}>
             Book Your Event
           </h1>
           <p className="text-gray-300 text-lg">
@@ -150,7 +178,8 @@ function BookEvent() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-emerald-700 hover:bg-emerald-600 text-white py-3 px-6 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-emerald-700/30 border border-yellow-400/20"
+              className="w-full bg-emerald-700 hover:bg-emerald-600 text-white py-3 px-6 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-emerald-700/30"
+              style={{ border: '1px solid rgba(212, 175, 55, 0.2)' }}
             >
               Submit Enquiry
             </button>

@@ -39,7 +39,12 @@ function Menu() {
       <div className="max-w-4xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in-up">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-yellow-400">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4" style={{
+            background: 'linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #F4E4BC 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text'
+          }}>
             Our Special Items
           </h1>
           <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
@@ -56,7 +61,7 @@ function Menu() {
               className="bg-gradient-to-r from-gray-800/90 to-emerald-900/30 backdrop-blur-sm p-6 rounded-2xl border-2 border-emerald-700/50 hover:border-emerald-600 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-lg hover:shadow-emerald-900/20 animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <h3 className="font-serif text-xl font-semibold text-yellow-400 mb-3">{item.name}</h3>
+              <h3 className="font-serif text-xl font-semibold mb-3" style={{ color: '#D4AF37' }}>{item.name}</h3>
               <p className="text-gray-300 leading-relaxed">{item.description}</p>
             </div>
           ))}
@@ -71,7 +76,7 @@ function Menu() {
             We specialize in authentic, traditional dishes prepared using time-honored methods. 
             Each item is crafted with fresh ingredients and genuine Malnad flavors.
           </p>
-          <p className="text-yellow-400 font-semibold">
+          <p className="font-semibold" style={{ color: '#D4AF37' }}>
             Complete menu available on request during visits or consultations for your special functions.
           </p>
         </div>

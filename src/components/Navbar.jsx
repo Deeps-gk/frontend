@@ -13,7 +13,12 @@ function Navbar() {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center space-x-3">
               <Logo size={32} />
-              <span className="font-serif text-yellow-400 text-xl font-bold tracking-wide">
+              <span className="font-serif text-xl font-bold tracking-wide" style={{
+                background: 'linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #F4E4BC 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>
                 Malnad Shivamogga
               </span>
             </Link>
@@ -34,7 +39,7 @@ function Navbar() {
               <Link to="/about" className="text-gray-300 hover:text-emerald-400 px-3 py-2 text-sm font-medium transition-colors duration-200">
                 About
               </Link>
-              <Link to="/contact" className="bg-emerald-700 hover:bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 border border-yellow-400/20">
+              <Link to="/contact" className="bg-emerald-700 hover:bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200" style={{ border: '1px solid rgba(212, 175, 55, 0.2)' }}>
                 Contact
               </Link>
             </div>
@@ -91,7 +96,8 @@ function Navbar() {
               </Link>
               <Link 
                 to="/contact" 
-                className="bg-emerald-700 hover:bg-emerald-600 text-white block px-3 py-2 text-base font-medium rounded-full text-center transition-colors duration-200 border border-yellow-400/20"
+                className="bg-emerald-700 hover:bg-emerald-600 text-white block px-3 py-2 text-base font-medium rounded-full text-center transition-colors duration-200"
+                style={{ border: '1px solid rgba(212, 175, 55, 0.2)' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact

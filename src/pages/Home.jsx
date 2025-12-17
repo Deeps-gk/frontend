@@ -16,12 +16,20 @@ function Home() {
       {/* Hero Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center px-6">
         {/* Title */}
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-center mb-6 tracking-wide animate-fade-in-up text-yellow-400">
+        <h1 className="text-4xl md:text-6xl lg:text-8xl font-light text-center mb-6 tracking-wider animate-fade-in-up" style={{
+          fontFamily: 'Georgia, "Times New Roman", serif',
+          background: 'linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #F4E4BC 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          textShadow: '0 3px 6px rgba(0,0,0,0.4)',
+          letterSpacing: '0.15em'
+        }}>
           Malnad Family Restaurant
         </h1>
         
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-gray-200 text-center mb-8 max-w-3xl leading-relaxed animate-fade-in-up animation-delay-300">
+        <p className="text-xl md:text-2xl text-center mb-8 max-w-3xl leading-relaxed animate-fade-in-up animation-delay-300" style={{ color: '#F5F1E8' }}>
           Authentic Malnad cuisine for your special moments. 
           A family-run restaurant serving traditional flavors for small functions and intimate gatherings.
         </p>
@@ -30,7 +38,8 @@ function Home() {
         <div className="text-center animate-fade-in-up animation-delay-600">
           <Link 
             to="/book-event" 
-            className="bg-emerald-700 hover:bg-emerald-600 text-white px-12 py-4 rounded-full text-xl font-semibold transform hover:scale-105 transition-all duration-300 inline-block mb-6 shadow-lg hover:shadow-emerald-700/30 border border-yellow-400/20"
+            className="bg-emerald-700 hover:bg-emerald-600 text-white px-12 py-4 rounded-full text-xl font-semibold transform hover:scale-105 transition-all duration-300 inline-block mb-6 shadow-lg hover:shadow-emerald-700/30"
+            style={{ border: '1px solid rgba(212, 175, 55, 0.2)' }}
           >
             Book Your Event
           </Link>

@@ -4,7 +4,12 @@ function About() {
       <div className="max-w-4xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in-up">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6" style={{
+            background: 'linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #F4E4BC 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text'
+          }}>
             About Our Family
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed">
@@ -79,7 +84,7 @@ function About() {
 
         {/* Our Commitment */}
         <div className="text-center bg-gradient-to-br from-gray-800/90 to-emerald-900/30 backdrop-blur-sm p-8 rounded-2xl border-2 border-emerald-700/50 hover:border-emerald-600 transition-all duration-300 animate-fade-in-up animation-delay-900">
-          <h3 className="font-serif text-2xl font-semibold text-yellow-400 mb-4">
+          <h3 className="font-serif text-2xl font-semibold mb-4" style={{ color: '#D4AF37' }}>
             Our Commitment to You
           </h3>
           <p className="text-gray-300 leading-relaxed max-w-3xl mx-auto">

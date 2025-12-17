@@ -10,6 +10,7 @@ import Catering from "./pages/Catering";
 import BulkOrders from "./pages/BulkOrders";
 import Events from "./pages/Events";
 import BookEvent from "./pages/BookEvent";
+import Admin from "./pages/Admin";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/bulk-orders" element={<BulkOrders />} />
           <Route path="/events" element={<Events />} />
           <Route path="/book-event" element={<BookEvent />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

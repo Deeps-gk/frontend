@@ -1,98 +1,106 @@
-Project Title:
-Malnad Family Restaurant – Event Booking & Admin Management System
+# Malnad Family Restaurant – Event Booking & Admin Management System
 
-Project Type:
+## Project Type
 Full-Stack Web Application
 
-Overview
+---
 
-Malnad Family Restaurant is a full-stack web application developed to streamline event booking and enquiry management for a local family-run restaurant. The system enables customers to submit event requests online and allows restaurant administrators to view and manage these enquiries through an internal admin dashboard.
+## Overview
 
-Problem Statement:
+Malnad Family Restaurant – Event Booking & Admin Management System is a full-stack web application developed to streamline event booking and enquiry management for a local family-run restaurant.  
+The system enables customers to submit event booking requests online and allows restaurant administrators to view and manage these enquiries through an internal admin dashboard.
 
-Traditional restaurant event bookings were handled manually via phone calls and WhatsApp messages, leading to:
+This project was built for real-world usage to replace manual and unstructured booking processes.
 
-Missed enquiries
+---
 
-Lack of centralized data
+## Problem Statement
 
-No structured record of events
+Event bookings were traditionally handled through phone calls and WhatsApp messages, which resulted in:
 
-Difficulty in tracking and responding efficiently
+- Missed or delayed enquiries  
+- No centralized data storage  
+- Lack of structured event records  
+- Difficulty in tracking and managing bookings efficiently  
 
-The restaurant required a simple, professional, and reliable digital solution without relying on third-party delivery platforms.
+The restaurant required a simple, reliable, and professional digital solution without depending on third-party platforms.
 
-Solution:
+---
 
-A web-based event booking system was designed and implemented where:
+## Solution
 
-Customers can submit event booking enquiries via a responsive website
+A web-based event booking and management system was designed and implemented with the following capabilities:
 
-All enquiries are securely stored in a database
+- Customers can submit event booking enquiries via a responsive web interface  
+- All booking data is securely stored in a centralized database  
+- Restaurant administrators can view and manage enquiries in real time  
+- The application is deployed and accessible for live usage  
 
-Admins can view bookings in real time through an admin interface
+---
 
-The system is deployed and accessible publicly for real-world usage
+## Technology Stack
 
-Technology Stack:
+**Frontend**
+- React (Vite)
+- Tailwind CSS
 
-Frontend: React (Vite), Tailwind CSS
+**Backend**
+- Node.js
+- Express.js
 
-Backend: Node.js, Express.js
+**Database**
+- MongoDB Atlas
 
-Database: MongoDB Atlas
+**Deployment**
+- Backend: Render  
+- Frontend: Local / Cloud Deployment
 
-Deployment: Render (Backend), Local/Cloud Frontend Deployment
+**Version Control**
+- Git & GitHub
 
-Version Control: Git & GitHub
+---
 
-Key Features:
+## Key Features
 
-Event enquiry submission form
+- Event enquiry submission form  
+- REST API for booking creation and retrieval  
+- Admin dashboard to view all event bookings  
+- Responsive UI for mobile and desktop devices  
+- Environment-based configuration for development and production  
+- Server-side validation for secure data handling  
 
-REST API for booking creation and retrieval
+---
 
-Admin dashboard to view all event bookings
-
-Responsive UI for mobile and desktop
-
-Environment-based configuration for development and production
-
-Secure data handling using server-side validation
-
-Outcome:
+## Outcome
 
 The system provides the restaurant with:
 
-Centralized event enquiry management
+- Centralized and structured event enquiry management  
+- Faster response time to customer requests  
+- A professional online presence  
+- A scalable foundation for future feature expansion  
 
-Improved response time to customers
+---
 
-Professional online presence
+## Learning Outcomes
 
-Scalable foundation for future enhancements such as notifications and analytics
+- Practical experience in building and deploying a full-stack web application  
+- Hands-on debugging of real-world frontend–backend integration issues  
+- Experience working with MongoDB Atlas and RESTful APIs  
+- Understanding of deployment workflows and environment configuration  
+- Improved product thinking and business-oriented development approach  
 
-Learning Outcomes:
+---
 
-Practical experience building and deploying a full-stack application
+## Future Enhancements
 
-Hands-on debugging of real-world frontend–backend integration issues
+- Admin authentication and role-based access  
+- WhatsApp or email notifications for new event enquiries  
+- Analytics dashboard for event trends and insights  
+- Multi-branch restaurant support  
 
-Experience with MongoDB Atlas, REST APIs, and deployment workflows
+---
 
-Understanding of product thinking and business-oriented development
-
-Future Enhancements:
-
-Admin authentication
-
-WhatsApp or email notifications for new bookings
-
-Analytics dashboard for event trends
-
-Multi-branch support# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
 
